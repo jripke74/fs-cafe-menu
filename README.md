@@ -212,3 +212,96 @@ Now that you know it works, you can change the remaining article and p elements 
 
 Step 43
 Next, position the other p elements to be on the same line with no space between them.
+
+Step 44
+To complete the styling, add the applicable class names flavor and price to all the remaining p elements.
+
+Step 45
+If you make the width of the page preview smaller, you will notice at some point, some of the text on the left starts wrapping around to the next line. This is because the width of the p elements on the left side can only take up 50% of the space.
+
+Since the prices on the right have significantly fewer characters, update the flavor class width to 75% and the price class width to 25%
+
+Step 46
+You will come back to styling the menu in a few steps, but for now, go ahead and add a second section element below the first for displaying the desserts offered by the cafe.
+
+Step 47
+Add an h2 element in the new section and give it the text Desserts.
+
+Step 48
+Add an empty article element under the Desserts heading. Give it a class attribute with the value item.
+
+Step 49
+Nest two p elements inside your article element. The first one's text should be Donut, and the second's text 1.50. Put both of them on the same line making sure there is no space between them.
+
+Step 50
+For the two p elements you just added, add dessert as the value of the first p element's class attribute and the value price as the second p element's class attribute.
+
+Step 51
+Something does not look right. You added the correct class attribute value to the p element with Donut as its text, but you have not defined a selector for it.
+
+The CSS rule for the flavor class already sets the properties you want. Add the dessert class as an additional selector for this CSS rule.
+
+Step 52
+Below the dessert you just added, add the rest of the desserts and prices using three more article elements, each with two nested p elements. Each element should have the correct dessert and price text, and all of them should have the correct classes.
+
+Example Code
+Cherry Pie 2.75
+Cheesecake 3.00
+Cinnamon Roll 2.50
+
+Step 53
+You can give your menu some space between the content and the sides with various padding properties.
+
+Give the menu class a padding-left and a padding-right with the same value 20px.
+
+Step 54
+That looks better. Now try to add the same 20px padding to the top and bottom of the menu.
+
+Step 55
+Since all 4 sides of the menu have the same internal spacing, remove the four properties and use a single padding property with the value 20px.
+Step 56 Passed
+The current width of the menu will always take up 80% of the body element's width. On a very wide screen, the coffee and dessert appear far apart from their prices.
+
+Add a max-width property to the menu class with a value of 500px to prevent it from growing too wide.
+
+Step 56
+The current width of the menu will always take up 80% of the body element's width. On a very wide screen, the coffee and dessert appear far apart from their prices.
+
+Add a max-width property to the menu class with a value of 500px to prevent it from growing too wide.
+
+Step 57
+You can change the font-family of text, to make it look different from the default font of your browser. Each browser has some common fonts available to it.
+
+Change all the text in your body, by adding a font-family property with the value sans-serif. This is a fairly common font that is very readable.
+
+Step 58
+It is a bit boring for all the text to have the same font-family. You can still have the majority of the text sans-serif and make just the h1 and h2 elements different using a different selector.
+
+Style both the h1 and the h2 elements using a single selector so that these elements' text use Impact font.
+
+Step 59
+You can add a fallback value for the font-family by adding another font name separated by a comma. Fallbacks are used in instances where the initial is not found/available.
+
+Add the fallback font serif after the Impact font.
+
+Step 60
+Italicize the Est. 2020 by creating an established class selector and giving it a font-style property of italic.
+
+Step 61
+Now apply the established class to the Est. 2020 text.
+
+Step 62
+The typography of heading elements (e.g. h1, h2) is set by default values of users' browsers.
+
+Add two new type selectors (h1 and h2). Use the font-size property for both, but use the value 40px for the h1 and 30px for the h2.
+
+Step 63
+Add a footer element below the main element, where you can add some additional information.
+
+Step 65
+Inside the address, add a p element. Then, nest an anchor (a) element in the p that links to https://www.freecodecamp.org and has the text Visit our website.
+
+Make sure that the link opens in a new tab by adding a target attribute with the value _blank.
+
+Step 66 Passed
+Add a second p element below the one with the link and give it the text 123 Free Code Camp Drive.
