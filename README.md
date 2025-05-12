@@ -150,3 +150,65 @@ Step 30
 article elements commonly contain multiple elements that have related information. In this case, it will contain a coffee flavor and a price for that flavor.
 
 Nest two p elements inside your article element. The first one's text should be French Vanilla, and the second's text 3.00.
+
+Step 31
+Starting below the existing coffee/price pair, add the following coffee and prices using article elements with two nested p elements inside each.
+
+Example Code
+Caramel Macchiato 3.75
+Pumpkin Spice 3.50
+Hazelnut 4.00
+Mocha 4.50
+As before, the first p element's text should contain the coffee flavor and the second p element's text should contain the price.
+
+Step 32
+The flavors and prices are currently stacked on top of each other and centered with their respective p elements. It would be nice if the flavor was on the left and the price was on the right.
+
+Add the class name flavor to the French Vanilla element.
+
+Step 33
+Using your new flavor class as a selector, set the text-align property's value to left.
+
+Step 34
+Next, you want to align the price to the right. Add a class named price to your p element that has 3.00 as its text.
+
+Step 35
+Now align the text to the right for the elements with the price class.
+
+Step 36
+That is kind of what you want, but now it would be nice if the flavor and price were on the same line. p elements are block-level elements, so they take up the entire width of their parent element.
+
+To get them on the same line, you need to apply some styling to the p elements so they behave more like inline elements.
+
+To do that, start by adding a class attribute with the value item to the first article element under the Coffee heading.
+
+Step 37
+The p elements are nested in an article element with the class attribute of item. You can style all the p elements nested anywhere in elements with a class named item like this:
+
+Example Code
+.item p { }
+Using the above selector, add a display property with value inline-block so the p elements behave more like inline elements.
+
+Step 38
+That's closer, but the price didn't stay over on the right. This is because inline-block elements only take up the width of their content.
+
+To spread them out, add a width property to the flavor and price class selectors that have a value of 50% each.
+
+Step 39
+Well, that did not work. Styling the p elements as inline-block and placing them on separate lines creates an extra space to the right of the first p element, causing the second one to shift to the next line.
+
+One way to fix that is to make each p element's width slightly less than 50%. So, change the width value to 49% for each class to see what happens.
+
+Step 40
+That worked, but there is still a little space on the right of the price.
+
+You could keep trying various percentages for the widths. Instead, use the backspace key to move the p element with the class price next to the p element with the class flavor so that they are on the same line in the editor. Make sure there is no space between the two elements.
+
+Step 41
+Now go ahead and change both the flavor and price class' widths to be 50% again.
+
+Step 42
+Now that you know it works, you can change the remaining article and p elements to match the first set. Start by adding the class item to the other article elements.
+
+Step 43
+Next, position the other p elements to be on the same line with no space between them.
