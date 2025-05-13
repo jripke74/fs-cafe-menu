@@ -390,3 +390,42 @@ Step 84
 You change the properties of a link when the link is being clicked by using a pseudo-selector that looks like a:active { propertyName: propertyValue; }.
 
 Change the color of the footer Visit our website link to white when clicked on.
+
+Step 85
+To maintain the existing black and brown color theme , change the color for when the link is visited to black and use brown for when the link is actually clicked.
+
+Step 86
+The menu text CAMPER CAFE has a different space from the top than the address's space at the bottom of the menu. This is due to the browser having some default top margin for the h1 element.
+
+Change the top margin of the h1 element to 0 to remove all the top margin.
+
+Step 87
+To remove some of the vertical space between the h1 element and the text Est. 2020, change the bottom margin of the h1 to 15px.
+
+Step 88
+Now the top spacing looks good. The space below the address at the bottom of the menu is a little bigger than the space at the top of the menu and the h1 element.
+
+To decrease the default margin space below the address p element, create a class selector named address and use the value 5px for the margin-bottom property.
+
+Step 89
+Now apply the address class to the p element containing the street address 123 Free Code Camp Drive.
+
+Step 90
+The menu looks good, but other than the coffee beans background image, it is mainly just text.
+
+Under the Coffee heading, add an image using the url https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg. Give the image an alt value of coffee icon.
+
+Step 91
+The image you added is not centered horizontally like the Coffee heading above it. img elements are "like" inline elements.
+
+To make the image behave like block-level elements such as headings, create an img type selector. Set the display property to block, and use margin-left and margin-right properties to center it horizontally.
+
+Step 92
+Add one last image under the Desserts heading using the URL https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg. Give the image an alt value of pie icon.
+
+Step 93
+It would be nice if the vertical space between the h2 elements and their associated icons was smaller. The h2 elements have default top and bottom margin space, so you could change the bottom margin of the h2 elements to say 0 or another number.
+
+There is an easier way, simply add a negative top margin to the img elements to pull them up from their current positions. Negative values are created using a - in front of the value. To complete this workshop, go ahead and use a negative top margin of 25px in the img type selector.
+
+Congratulations! You have completed the Cafe Menu workshop.
