@@ -298,10 +298,95 @@ Add two new type selectors (h1 and h2). Use the font-size property for both, but
 Step 63
 Add a footer element below the main element, where you can add some additional information.
 
+Step 64
+Inside the footer, add an address element. You will add contact information to this element in the next few steps.
+
 Step 65
 Inside the address, add a p element. Then, nest an anchor (a) element in the p that links to https://www.freecodecamp.org and has the text Visit our website.
 
 Make sure that the link opens in a new tab by adding a target attribute with the value _blank.
 
-Step 66 Passed
+Step 66
 Add a second p element below the one with the link and give it the text 123 Free Code Camp Drive.
+
+Step 67
+You can use an hr element to display a divider between sections of different content.
+
+Example Code
+<section>
+  <h2>Things cats love</h2>
+  <hr>
+  <p>Cats love lasagna.</p>
+</section>
+First, add an hr element between the p element with the class established and the first section element.
+
+Note that the hr element is a void element.
+
+Step 68 Passed
+The default properties of an hr element will make it appear as a thin light grey line. You can change the height of the line by specifying a value for the height property.
+
+Change the height of the hr element to 3px.
+
+Step 69
+Change the background color of the hr element to brown so it matches the color of the coffee beans.
+
+Step 70
+Notice the grey color along the edges of the line. Those edges are known as borders. Each side of an element can have a different color or they can all be the same.
+
+Make all the edges of the hr element the same color as the background of it using the border-color property.
+
+Step 71
+Notice how the thickness of the line looks bigger? The default value of a property named border-width is 1px for all edges of hr elements. By changing the border to the same color as the background, the total height of the line is 5px (3px plus the top and bottom border width of 1px).
+
+Change the height property of the hr to 2px, so the total height of it becomes 4px.
+
+Step 72
+Go ahead and add another hr element between the main element and the footer element.
+
+Step 73
+To create a little more room around the menu, add 20px of space on the inside of the body element by using the padding property.
+
+Step 74
+Focusing on the menu items and prices, there is a fairly large gap between each line.
+
+Use the existing selector that targets all the p elements nested in elements with the class named item and set their top and bottom margin to 5px.
+
+Step 75
+Using the same style selector in the previous step, make the font size of the items and prices larger by using a value of 18px.
+
+Step 76
+Changing the margin-bottom to 5px looks great. However, now the space between the Cinnamon Roll menu item and the second hr element does not match the space between the top hr element and the Coffee heading.
+
+Add some more space by creating a class named bottom-line using 25px for the margin-top property.
+
+Step 77
+Now add the bottom-line class to the second hr element so the styling is applied.
+
+Step 78
+Next, you are going to be styling the footer element. To keep the CSS organized, add a comment at the end of styles.css with the text FOOTER.
+
+Step 79
+Moving down to the footer element, make all the text have a value of 14px for the font size.
+
+Step 80
+The default styling of the address element is to have font-style set to italic. Add a selector for the address element and set its font-style to normal.
+
+Step 81
+The default color of a link that has not yet been clicked on is typically blue. The default color of a link that has already been visited from a page is typically purple.
+
+To make the footer links the same color regardless if a link has been visited, use a type selector for the anchor element (a) and use the value black for the color property.
+
+Step 82
+You change the properties of a link when the link has been visited by using a pseudo-selector that looks like a:visited { propertyName: propertyValue; }.
+
+Change the color of the footer Visit our website link to grey when a user has visited the link.
+
+Step 83
+You change the properties of a link when the mouse hovers over them by using a pseudo-selector that looks like a:hover { propertyName: propertyValue; }.
+
+Change the color of the footer Visit our website link to be brown when a user hovers over it.
+
+Step 84
+You change the properties of a link when the link is being clicked by using a pseudo-selector that looks like a:active { propertyName: propertyValue; }.
+
+Change the color of the footer Visit our website link to white when clicked on.
